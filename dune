@@ -1,4 +1,5 @@
-(test
-  (name identity_test)
-  (libraries ounit)
+(library
+  (name olox)
+  (inline_tests)
+  (preprocess (pps ppx_inline_test))
 )
