@@ -1,0 +1,4 @@
+(test
+  (name identity_test)
+  (libraries ounit)
+)
