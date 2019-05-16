@@ -1,5 +1,4 @@
-(library
+(executable
   (name olox)
-  (inline_tests)
-  (preprocess (pps ppx_inline_test))
+  (libraries lwt.unix core)
 )
