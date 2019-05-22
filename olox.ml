@@ -1,7 +1,8 @@
+open Scanner
 module Olox  = struct
   let run source =
     let tokens = Scanner.scan_tokens in
-    List.iter (fun token -> Stdio.print_endline token) tokens
+    List.iter (fun token -> print_endline token) tokens
 
   let run_prompt = fun _ ->
     while true do

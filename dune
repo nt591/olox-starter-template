@@ -1,4 +1,9 @@
 (executable
   (name olox)
-  (libraries lwt.unix core)
+  (libraries oUnit)
 )
+
+(alias
+  (name    runtest)
+  (deps    (:x olox.exe))
+  (action  (run %{x})))
