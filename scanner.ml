@@ -62,6 +62,8 @@ module Scanner = struct
     tokens: token list;
   }
 
+  let get_token_type token = token.token_type
+
   let is_at_end ctx = ctx.current >= (String.length ctx.source)
 
   (* runs in O(n) time *)
